@@ -1,0 +1,204 @@
+/*Header*/
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    height: 80px;
+    background: #1b1b1b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px 0px 1px;   
+}
+nav .logo{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 600;
+    
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    z-index: 2;
+}
+nav ul li{
+    margin: 0 5px;
+}
+#logo{
+  width: 80px;
+  height: 80px;
+}
+.logos{
+  padding-right: 10px;
+  padding-left: 10p;
+  margin: 0%;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 8px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+   
+}
+nav ul li a:hover,
+nav ul li a.active{
+    color: #1b1b1b;
+    background: #fff;
+}
+nav .menu-btn i{
+    color: #fff;
+    font-size: 22px;
+    cursor: pointer;
+    display: none;
+}
+#click{
+    display: none;
+}
+@media (max-width: 940px) {
+    nav .menu-btn i{
+        display: block;
+    }
+    #click:checked ~ .menu-btn i:before{
+      content: "\f00d";
+     }
+  nav ul{
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    background: #111;
+    height: 100vh;
+    width: 100%;
+    display: block;
+    text-align: center;
+    transition: all 0.3 ease;
+  }
+  #click:checked ~ ul{
+    left: 0%;
+  }
+  nav ul li{
+    margin: 40px 0;
+  }
+  nav ul li a{
+    font-size: 20px;
+    display: block;
+  }
+  nav ul li a:hover,
+  nav ul li a.active{
+    color: rgb(255, 213, 0);
+    background: none;
+  }
+}
+/*title*/
+#first{
+    background: url('back3.gif');
+    background-blend-mode:darken;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 200px;
+
+}
+#TITLE{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(230, 184, 92);
+    padding-top: 60px;
+}
+/*footer*/
+.footer-content{
+    background: rgb(0, 0, 0);
+    height: auto;
+    width: 100vw;
+    font-family:"Open Sans";
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction: column ;
+    text-align: center ;
+  }
+  .footer-content h3{
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+    color: rgb(221, 114, 39);
+    text-align: center;
+  }
+  .footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+    text-align: center;
+    color: rgb(213, 182, 26);
+  }
+  .socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3 rem 0;
+  }
+  .socials li{
+    margin: 0 10px;
+  }
+  .socials a{
+    text-decoration: none;
+    color:#fff;
+  }
+  .socials a i{
+    font-size: 1.1rem;
+    transition: color.4s ease;
+  
+  }
+  .socials a:hover i{
+    color:rgb(146, 122, 46);
+  }
+  .footer-bottom{
+    background: rgb(0, 0, 0);
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+    color: antiquewhite;
+  }
+  .footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+  }
+  .footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+    color: bisque;
+  
+  }
+  .bottom-logo{
+    width: 100px;
+  }
+
+/*CARDS*/
+#REGIS{
+  padding: 50px;
+  text-align: center;
+  background: url('back2.gif');
+  background-size: 100%;
+  background-blend-mode:darken;
+}
+.REGIS-col{
+  text-align: center;
+  padding: 1px;
+  padding-bottom: 1px;
+}
+.card{
+  background-color: rgba(183, 111, 23, 0.799);
+  margin-bottom: 20px;
+}
